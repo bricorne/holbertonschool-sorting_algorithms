@@ -1,3 +1,4 @@
+
 #include "sort.h"
 
 void rec_quicksort(int *array, int low, int high, size_t size);
@@ -62,9 +63,9 @@ int lomutoPartition(int *array, int low, int high, size_t size)
         {
                 if (array[j] < pivot)
                 {
+                        i++;
                         if (i != j)
                 {
-                        i++;
                         swap(&array[i], &array[j], array, size);
                 }
                 }
