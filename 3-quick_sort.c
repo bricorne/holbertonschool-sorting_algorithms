@@ -10,14 +10,13 @@ int lomutoPartition(int *array, int low, int high, size_t size);
 * @b : second int
 * Return: void
 */
-void swap(int *a, int *b, int *array, size_t size)
-{
-        int temp;
-
-        temp = *a;
+void swap(int *a, int *b, int *array, size_t size) {
+    if (*a != *b) {
+        int temp = *a;
         *a = *b;
         *b = temp;
         print_array(array, size);
+    }
 }
 
 /**
